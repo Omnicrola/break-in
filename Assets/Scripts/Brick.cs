@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
+using Random = UnityEngine.Random;
 
 public class Brick : MonoBehaviour
 {
@@ -21,10 +23,23 @@ public class Brick : MonoBehaviour
     {
         if (collision.gameObject.tag == "ball")
         {
-            AudioPlayer.INSTANCE.Play(ballImpactSound);
-            LevelManager.INSTANCE.AddScore(10);
-            gameObject.SetActive(false);
+            DestroyBrick();
         }
+    }
+
+    private void DestroyBrick()
+    {
+        AudioPlayer.INSTANCE.Play(ballImpactSound);
+        LevelManager.INSTANCE.AddScore(10);
+        gameObject.SetActive(false);
+        var powerupPrefab = PowerupTable.AwardPowerup();
+        if (powerupPrefab != null)
+        {
+            var powerup = Instantiate(powerupPrefab) as GameObject;
+            var ourPosition = gameObject.transform.position;
+            powerup.transform.position = new Vector3(ourPosition.x, ourPosition.y, 0);
+        }
+
     }
 
     // Update is called once per frame

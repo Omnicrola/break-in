@@ -91,6 +91,13 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void AddBall(int gain)
+    {
+        balls += gain;
+        UpdateBallDisplay();
+
+    }
+
     public void RemoveBall(int loss)
     {
         balls -= loss;
@@ -105,4 +112,5 @@ public class LevelManager : MonoBehaviour
             GameOver();
         }
     }
+
 }
