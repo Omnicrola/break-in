@@ -5,6 +5,7 @@ public class Brick : MonoBehaviour
 {
 
     public AudioClip ballImpactSound;
+
     private Rigidbody2D _rigidBody;
 
     // Use this for initialization
@@ -18,6 +19,8 @@ public class Brick : MonoBehaviour
         if (collision.gameObject.tag == "ball")
         {
             AudioPlayer.INSTANCE.Play(ballImpactSound);
+            LevelManager.INSTANCE.AddScore(10);
+            gameObject.SetActive(false);
         }
     }
 

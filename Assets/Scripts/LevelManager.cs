@@ -1,18 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager INSTANCE;
 
     public float startX = 0;
     public float startY = 0;
     public int columns = 4;
     public int rows = 4;
     public GameObject brickPrefab;
+    public Text scoreDisplay;
 
     private Transform bricksHolder;
+    private int score = 0;
 
-    public void Awake()
+
+    void Awake()
+    {
+        if (INSTANCE == null)
+        {
+            INSTANCE = this;
+        }
+        else if (INSTANCE != this)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+        BuildLevel();
+    }
+
+    public void BuildLevel()
     {
         bricksHolder = new GameObject("Bricks").transform;
         var min = brickPrefab.GetComponent<SpriteRenderer>().sprite.bounds.min;
@@ -30,5 +49,11 @@ public class LevelManager : MonoBehaviour
                 newBrick.transform.SetParent(bricksHolder);
             }
         }
+    }
+
+    public void AddScore(int gain)
+    {
+        score += gain;
+        scoreDisplay.text = "Score: " + score;
     }
 }
