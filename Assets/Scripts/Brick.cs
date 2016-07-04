@@ -1,15 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Brick : MonoBehaviour {
+public class Brick : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public AudioClip ballImpactSound;
+    private Rigidbody2D _rigidBody;
+
+    // Use this for initialization
+    void Start()
+    {
+        _rigidBody = GetComponent<Rigidbody2D>();
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ball")
+        {
+            AudioPlayer.INSTANCE.Play(ballImpactSound);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
