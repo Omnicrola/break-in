@@ -1,0 +1,505 @@
+fileFormatVersion: 2
+guid: 7da23109e54d94846b2b8d701bbc5876
+timeCreated: 1467654649
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: paddle_01.png
+    21300002: paddle_02.png
+    21300004: paddle_03.png
+    21300006: paddle_04.png
+    21300008: paddle_05.png
+    21300010: paddle_06.png
+    21300012: paddle_07.png
+    21300014: paddle_08.png
+    21300016: paddle_09.png
+    21300018: paddle_10.png
+    21300020: paddle_11.png
+    21300022: paddle_12.png
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: paddle_01.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 520
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 255, y: -36}
+        - {x: 260, y: -22}
+        - {x: 260, y: 21}
+        - {x: 258, y: 30}
+        - {x: 252, y: 39}
+        - {x: 238, y: 55}
+        - {x: 223, y: 65}
+        - {x: 210, y: 70}
+        - {x: -209, y: 70}
+        - {x: -216, y: 69}
+        - {x: -228, y: 62}
+        - {x: -234, y: 57}
+        - {x: -249, y: 42}
+        - {x: -256, y: 34}
+        - {x: -260, y: 23}
+        - {x: -260, y: -21}
+        - {x: -257, y: -29}
+        - {x: -255, y: -36}
+        - {x: -240, y: -54}
+        - {x: -225, y: -64}
+        - {x: -215, y: -69}
+        - {x: -209, y: -70}
+        - {x: 210, y: -70}
+        - {x: 218, y: -67}
+        - {x: 234, y: -59}
+        - {x: 246, y: -47}
+    - name: paddle_02.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 939
+        width: 640
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 294, y: -58}
+        - {x: 306, y: -47}
+        - {x: 314, y: -36}
+        - {x: 319, y: -24}
+        - {x: 320, y: -21}
+        - {x: 320, y: 21}
+        - {x: 318, y: 30}
+        - {x: 312, y: 39}
+        - {x: 297, y: 55}
+        - {x: 293, y: 58}
+        - {x: 283, y: 65}
+        - {x: 275, y: 68}
+        - {x: 269, y: 70}
+        - {x: -269, y: 70}
+        - {x: -276, y: 69}
+        - {x: -288, y: 62}
+        - {x: -294, y: 57}
+        - {x: -309, y: 42}
+        - {x: -315, y: 34}
+        - {x: -320, y: 25}
+        - {x: -320, y: -21}
+        - {x: -317, y: -29}
+        - {x: -314, y: -36}
+        - {x: -310, y: -42}
+        - {x: -300, y: -53}
+        - {x: -285, y: -64}
+        - {x: -275, y: -69}
+        - {x: -269, y: -70}
+        - {x: 270, y: -70}
+        - {x: 273, y: -69}
+        - {x: 278, y: -67}
+        - {x: 287, y: -63}
+    - name: paddle_03.png
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 23
+        width: 500
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 245, y: -31}
+        - {x: 250, y: -20}
+        - {x: 250, y: 23}
+        - {x: 242, y: 37}
+        - {x: 222, y: 55}
+        - {x: 209, y: 60}
+        - {x: -207, y: 60}
+        - {x: -214, y: 59}
+        - {x: -228, y: 51}
+        - {x: -246, y: 31}
+        - {x: -250, y: 21}
+        - {x: -250, y: -23}
+        - {x: -241, y: -37}
+        - {x: -228, y: -49}
+        - {x: -222, y: -55}
+        - {x: -210, y: -60}
+        - {x: 212, y: -60}
+        - {x: 228, y: -50}
+        - {x: 241, y: -36}
+    - name: paddle_04.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 620
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 301, y: -36}
+        - {x: 305, y: -31}
+        - {x: 310, y: -20}
+        - {x: 310, y: 23}
+        - {x: 301, y: 37}
+        - {x: 287, y: 50}
+        - {x: 282, y: 54}
+        - {x: 273, y: 58}
+        - {x: 267, y: 60}
+        - {x: -267, y: 60}
+        - {x: -274, y: 59}
+        - {x: -288, y: 50}
+        - {x: -301, y: 36}
+        - {x: -305, y: 31}
+        - {x: -309, y: 22}
+        - {x: -310, y: 19}
+        - {x: -310, y: -23}
+        - {x: -301, y: -37}
+        - {x: -288, y: -49}
+        - {x: -282, y: -54}
+        - {x: -271, y: -59}
+        - {x: -268, y: -60}
+        - {x: 268, y: -60}
+        - {x: 271, y: -59}
+        - {x: 282, y: -54}
+        - {x: 288, y: -50}
+    - name: paddle_05.png
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 145
+        width: 520
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 255, y: -36}
+        - {x: 260, y: -22}
+        - {x: 260, y: 21}
+        - {x: 258, y: 30}
+        - {x: 252, y: 39}
+        - {x: 238, y: 55}
+        - {x: 223, y: 65}
+        - {x: 210, y: 70}
+        - {x: -209, y: 70}
+        - {x: -216, y: 69}
+        - {x: -228, y: 62}
+        - {x: -234, y: 57}
+        - {x: -249, y: 42}
+        - {x: -256, y: 34}
+        - {x: -260, y: 23}
+        - {x: -260, y: -21}
+        - {x: -257, y: -29}
+        - {x: -255, y: -36}
+        - {x: -240, y: -54}
+        - {x: -225, y: -64}
+        - {x: -215, y: -69}
+        - {x: -209, y: -70}
+        - {x: 210, y: -70}
+        - {x: 218, y: -67}
+        - {x: 234, y: -59}
+        - {x: 246, y: -47}
+    - name: paddle_06.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 797
+        width: 640
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 294, y: -58}
+        - {x: 306, y: -47}
+        - {x: 314, y: -36}
+        - {x: 319, y: -24}
+        - {x: 320, y: -21}
+        - {x: 320, y: 21}
+        - {x: 318, y: 30}
+        - {x: 312, y: 39}
+        - {x: 297, y: 55}
+        - {x: 293, y: 58}
+        - {x: 283, y: 65}
+        - {x: 275, y: 68}
+        - {x: 269, y: 70}
+        - {x: -269, y: 70}
+        - {x: -276, y: 69}
+        - {x: -288, y: 62}
+        - {x: -294, y: 57}
+        - {x: -309, y: 42}
+        - {x: -315, y: 34}
+        - {x: -320, y: 25}
+        - {x: -320, y: -21}
+        - {x: -317, y: -29}
+        - {x: -314, y: -36}
+        - {x: -310, y: -42}
+        - {x: -300, y: -53}
+        - {x: -285, y: -64}
+        - {x: -275, y: -69}
+        - {x: -269, y: -70}
+        - {x: 270, y: -70}
+        - {x: 273, y: -69}
+        - {x: 278, y: -67}
+        - {x: 287, y: -63}
+    - name: paddle_07.png
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 409
+        width: 500
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 245, y: -31}
+        - {x: 250, y: -20}
+        - {x: 250, y: 23}
+        - {x: 242, y: 37}
+        - {x: 222, y: 55}
+        - {x: 209, y: 60}
+        - {x: -209, y: 60}
+        - {x: -222, y: 54}
+        - {x: -229, y: 49}
+        - {x: -246, y: 31}
+        - {x: -250, y: 21}
+        - {x: -250, y: -23}
+        - {x: -241, y: -37}
+        - {x: -222, y: -55}
+        - {x: -210, y: -60}
+        - {x: 212, y: -60}
+        - {x: 228, y: -50}
+        - {x: 241, y: -36}
+    - name: paddle_08.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 620
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 301, y: -36}
+        - {x: 305, y: -31}
+        - {x: 310, y: -20}
+        - {x: 310, y: 23}
+        - {x: 301, y: 37}
+        - {x: 287, y: 50}
+        - {x: 282, y: 54}
+        - {x: 273, y: 58}
+        - {x: 267, y: 60}
+        - {x: -269, y: 60}
+        - {x: -282, y: 54}
+        - {x: -288, y: 49}
+        - {x: -301, y: 36}
+        - {x: -305, y: 31}
+        - {x: -310, y: 20}
+        - {x: -310, y: -23}
+        - {x: -301, y: -37}
+        - {x: -288, y: -49}
+        - {x: -282, y: -54}
+        - {x: -271, y: -59}
+        - {x: -268, y: -60}
+        - {x: 268, y: -60}
+        - {x: 271, y: -59}
+        - {x: 282, y: -54}
+        - {x: 288, y: -50}
+    - name: paddle_09.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 520
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 234, y: -57.5}
+        - {x: 246, y: -46.5}
+        - {x: 254, y: -35.5}
+        - {x: 260, y: -22.5}
+        - {x: 260, y: 22.5}
+        - {x: 253, y: 39.5}
+        - {x: 234, y: 59.5}
+        - {x: 223, y: 65.5}
+        - {x: 210, y: 70.5}
+        - {x: -209, y: 70.5}
+        - {x: -216, y: 69.5}
+        - {x: -228, y: 63.5}
+        - {x: -248, y: 44.5}
+        - {x: -254, y: 35.5}
+        - {x: -258, y: 26.5}
+        - {x: -260, y: 21.5}
+        - {x: -260, y: -23.5}
+        - {x: -254, y: -35.5}
+        - {x: -247, y: -45.5}
+        - {x: -238, y: -53.5}
+        - {x: -227, y: -62.5}
+        - {x: -210, y: -70.5}
+        - {x: 208, y: -70.5}
+        - {x: 217, y: -67.5}
+        - {x: 227, y: -62.5}
+    - name: paddle_10.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 654
+        width: 640
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 306, y: -46.5}
+        - {x: 310, y: -41.5}
+        - {x: 318, y: -26.5}
+        - {x: 320, y: -20.5}
+        - {x: 320, y: 21.5}
+        - {x: 319, y: 24.5}
+        - {x: 312, y: 39.5}
+        - {x: 297, y: 55.5}
+        - {x: 293, y: 58.5}
+        - {x: 283, y: 65.5}
+        - {x: 275, y: 68.5}
+        - {x: 269, y: 70.5}
+        - {x: -269, y: 70.5}
+        - {x: -275, y: 68.5}
+        - {x: -280, y: 66.5}
+        - {x: -288, y: 62.5}
+        - {x: -294, y: 57.5}
+        - {x: -308, y: 43.5}
+        - {x: -314, y: 35.5}
+        - {x: -318, y: 26.5}
+        - {x: -320, y: 20.5}
+        - {x: -320, y: -21.5}
+        - {x: -314, y: -35.5}
+        - {x: -307, y: -45.5}
+        - {x: -298, y: -53.5}
+        - {x: -287, y: -62.5}
+        - {x: -270, y: -70.5}
+        - {x: 268, y: -70.5}
+        - {x: 277, y: -68.5}
+        - {x: 294, y: -58.5}
+    - name: paddle_11.png
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 531
+        width: 500
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 243, y: -35.5}
+        - {x: 250, y: -21.5}
+        - {x: 250, y: 24.5}
+        - {x: 242, y: 37.5}
+        - {x: 222, y: 55.5}
+        - {x: 210, y: 60.5}
+        - {x: -209, y: 60.5}
+        - {x: -222, y: 54.5}
+        - {x: -228, y: 49.5}
+        - {x: -241, y: 36.5}
+        - {x: -245, y: 31.5}
+        - {x: -250, y: 26.5}
+        - {x: -250, y: -22.5}
+        - {x: -249, y: -25.5}
+        - {x: -239, y: -40.5}
+        - {x: -227, y: -51.5}
+        - {x: -209, y: -60.5}
+        - {x: 205, y: -60.5}
+        - {x: 215, y: -58.5}
+        - {x: 227, y: -50.5}
+    - name: paddle_12.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 620
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 307, y: -26.5}
+        - {x: 309, y: -21.5}
+        - {x: 310, y: -18.5}
+        - {x: 310, y: 23.5}
+        - {x: 302, y: 37.5}
+        - {x: 282, y: 55.5}
+        - {x: 269, y: 60.5}
+        - {x: -269, y: 60.5}
+        - {x: -282, y: 54.5}
+        - {x: -288, y: 49.5}
+        - {x: -301, y: 36.5}
+        - {x: -305, y: 31.5}
+        - {x: -308, y: 24.5}
+        - {x: -310, y: 19.5}
+        - {x: -310, y: -18.5}
+        - {x: -308, y: -24.5}
+        - {x: -304, y: -32.5}
+        - {x: -298, y: -40.5}
+        - {x: -287, y: -50.5}
+        - {x: -274, y: -58.5}
+        - {x: -266, y: -60.5}
+        - {x: 265, y: -60.5}
+        - {x: 275, y: -58.5}
+        - {x: 287, y: -51.5}
+        - {x: 302, y: -35.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
