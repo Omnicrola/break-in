@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Player : MonoBehaviour
     public AudioClip ballImpactSound;
 
     private Rigidbody2D rigidBody;
+
 
     void Start()
     {
@@ -27,4 +29,6 @@ public class Player : MonoBehaviour
             AudioPlayer.INSTANCE.Play(ballImpactSound);
         }
     }
+
+
 }

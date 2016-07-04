@@ -5,6 +5,8 @@ public class Wall : MonoBehaviour
 {
 
     public AudioClip ballImpactSound;
+
+
     private Rigidbody2D _rigidBody;
 
     // Use this for initialization

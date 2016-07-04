@@ -10,11 +10,17 @@ public class LevelManager : MonoBehaviour
     public float startY = 0;
     public int columns = 4;
     public int rows = 4;
+
     public GameObject brickPrefab;
+    public GameObject ballPrefab;
+
     public Text scoreDisplay;
+    public Text ballDisplay;
+    public GameObject gameOver;
 
     private Transform bricksHolder;
     private int score = 0;
+    private int balls = 3;
 
 
     void Awake()
@@ -29,10 +35,18 @@ public class LevelManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
         BuildLevel();
+        ResetUi();
+    }
+
+    private void ResetUi()
+    {
+        UpdateScore();
+        UpdateBallDisplay();
     }
 
     public void BuildLevel()
     {
+        gameOver.SetActive(false);
         bricksHolder = new GameObject("Bricks").transform;
         var min = brickPrefab.GetComponent<SpriteRenderer>().sprite.bounds.min;
         var max = brickPrefab.GetComponent<SpriteRenderer>().sprite.bounds.max;
@@ -54,6 +68,41 @@ public class LevelManager : MonoBehaviour
     public void AddScore(int gain)
     {
         score += gain;
+        UpdateScore();
+    }
+
+    private void UpdateScore()
+    {
         scoreDisplay.text = "Score: " + score;
+    }
+
+    public void GameOver()
+    {
+        gameOver.SetActive(true);
+    }
+
+    public void RespawnBall(Vector2 respawnPosition)
+    {
+        if (balls >= 0)
+        {
+            var ball = Instantiate(ballPrefab, respawnPosition, Quaternion.identity) as GameObject;
+            ball.GetComponent<Rigidbody2D>().MovePosition(respawnPosition);
+            ball.SetActive(true);
+        }
+    }
+
+    public void RemoveBall(int loss)
+    {
+        balls -= loss;
+        UpdateBallDisplay();
+    }
+
+    private void UpdateBallDisplay()
+    {
+        ballDisplay.text = "Balls: " + balls;
+        if (balls <= 0)
+        {
+            GameOver();
+        }
     }
 }
